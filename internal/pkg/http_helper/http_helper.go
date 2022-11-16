@@ -1,4 +1,4 @@
-package httphelper
+package http_helper
 
 import (
 	"fmt"

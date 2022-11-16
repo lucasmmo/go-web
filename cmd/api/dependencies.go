@@ -1,14 +1,14 @@
 package main
 
-import cfgctrl "go-web/internal/app/config_server/controller"
+import "go-web/internal/app/config_server"
 
 type dependencies struct {
-	configServerController *cfgctrl.ConfigServerController
+	configServerController *config_server.ConfigServerController
 }
 
 func InitDependencies() *dependencies {
 
-	configServerCtrl := cfgctrl.NewConfigServiceController()
+	configServerCtrl := config_server.NewConfigServiceController()
 
 	return &dependencies{
 		configServerController: configServerCtrl,
